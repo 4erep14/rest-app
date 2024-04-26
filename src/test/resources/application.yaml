@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: rest-app
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/${DB_NAME}_test
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+
+user:
+  min-age: 18
